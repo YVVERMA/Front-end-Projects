@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="shortcut icon" href="data:image/png;base64,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" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="micro.css" />
+    <style></style>
+  </head>
+  <body>
+    <div class="main">
+    <nav>
+      <div class="imgg"><img src="microsoft.png" alt="" /></div>
+      <ul>
+        <li>
+          <a href="https://www.microsoft.com/en-in/microsoft-365"
+            >Microsoft 365</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.microsoft.com/en-in/microsoft-365/business/compare-all-microsoft-365-business-products"
+            >Tearms</a
+          >
+        </li>
+        <li><a href="#">Copilt</a></li>
+        <li><a href="#">Windows</a></li>
+        <li><a href="#">Surface</a></li>
+        <li><a href="https://www.microsoft.com/en-in/store/cart">Xbox</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+      <div class="nav2">
+        <li>
+          <a href="#">All Microsoft </a><i class="fa-solid fa-chevron-down"></i>
+        </li>
+        <li>
+          <a href="#">Search </a
+          ><i class="fa-solid fa-magnifying-glass fa-rotate-90"></i>
+        </li>
+        <li>
+          <a href="https://www.microsoft.com/en-in/store/cart">Cart </a
+          ><i class="fa-brands fa-opencart"></i>
+        </li>
+        <li>
+          <a href="#">Sign in </a
+          ><i
+            class="fa-regular fa-circle-user fa-lg"
+            style="color: #151414"></i>
+        </li>
+      </div>
+    </nav>
+    <div class="container">
+      <img
+        src="Highlight-Surface-Pro-AI-11Ed-Sapphire-MC001-3000x1682_VP5-1920x600.avif"
+        alt=""
+        width="100%"
+        height="450px" />
+      <div class="img-content">
+        <span>New</span>
+        <h1>Meet Surface Pro</h1>
+        <p>
+          This laptop's unrivalled flexibility and AI features like Live
+          Captions and Cocreator, enable you to do more than you ever imagined.
+        </p>
+        <button>
+          <a
+            href="https://www.microsoft.com/en-in/surface/devices/surface-pro-11th-edition?icid=mscom_marcom_H1a_SurfacePro11Edition_FY24SpringSurface"
+            style="color: white; text-decoration: none"
+            >Learn More</a
+          >
+        </button>
+      </div>
+    </div>
+    <div class="icon-pl">
+      <i class="fa-regular fa-circle-play" style="color: #0f0f10"></i>
+      <i class="fa-solid fa-chevron-left" style="color: #050505"></i>
+      <i class="fa-solid fa-circle fa-2xs"></i>
+
+      <i class="fa-solid fa-angle-right" style="color: #050505"></i>
+    </div>
+
+    <!--  -->
+    <div class="icons-mic">
+      <div class="box box1">
+        <i class="fa-brands fa-windows"></i><br />
+        <a
+          href="https://www.microsoft.com/en-in/microsoft-365/buy/compare-all-microsoft-365-products?icid=MSCOM_QL_M365"
+          >Chouse your microsoft 365</a
+        >
+      </div>
+      <div class="box">
+        <i class="fa-brands fa-xbox"></i><br />
+        <a href="#">Shop Xbox</a>
+      </div>
+      <div class="box box3">
+        <i class="fa-brands fa-windows"></i><br />
+        <a href="#">Get window 11</a>
+      </div>
+
+      <div class="box box4">
+        <i class="fa-regular fa-file"></i><br />
+        <a href="#">Explor surface devies</a>
+      </div>
+    </div>
+
+    <div class="layout">
+      <div class="card">
+        <img
+          src="Content-Card-Surface-Laptop-AI-7Ed-Sapphire-MC001.avif"
+          alt="" />
+        <div class="card-hader">
+          <span class="bag">New</span>
+        </div>
+        <div class="card-body">
+          <h2>Surface Laptop, Copilot+ PC</h2>
+          <p>
+            Unlock next-gen AI features like Live Captions and Cocreator with
+            this exceptionally powerful laptop
+          </p>
+        </div>
+        <div class="card-footer">
+          <button>Learn More</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="Content-Card-Microsoft-365-Lifestyle-Sandstone-Icon-Toss.avif"
+          alt="" />
+        <div class="card-hader"></div>
+        <div class="card-body">
+          <h2>Maximise the everyday with Microsoft 365</h2>
+          <p>
+            Get online protection, secure cloud storage and innovative apps
+            designed to fit your needs – all in one plan.
+          </p>
+        </div>
+        <div class="card-footer">
+          <button>For one person</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="gldn-XSX-CP-Xbox-Series-X.webp" alt="" />
+        <div class="card-hader"></div>
+        <div class="card-body">
+          <h2>Xbox Series X</h2>
+          <p>The faster. most powerful Xbox ever:</p>
+        </div>
+        <div class="card-footer">
+          <button>Shop Xbox series X</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="Content-Card-Game-Pass-Ultimate.avif" alt="" />
+        <div class="card-hader"></div>
+        <div class="card-body">
+          <h2>Xbox Game Pass Ultimate</h2>
+          <p>
+            Play new games on day one. Plus, enjoy hundreds of high-quality
+            games with friends on console and PC.
+          </p>
+        </div>
+        <div class="card-footer">
+          <button>Join now</button>
+        </div>
+      </div>
+    </div>
+    <div class="sec-img">
+      <img
+        src="Highlight-Hero-Windows11-GlobalLaunch_VP5-1596x600.jpeg"
+        alt="" />
+    </div>
+    <div class="sec-content">
+      <h2>Designed for life today – and tomorrow</h2>
+      <p>
+        The next-generation of games. Your goals. Friends and family. Windows 11
+        was made to bring you closer to everything you love
+      </p>
+      <button>See if your PC is ready</button>
+    </div>
+    <div class="coco">
+      <h1>For business</h1>
+    </div>
+
+    <div class="layout">
+      <div class="card">
+        <img src="gldn-Surf-CP-SurfaceFamilyForBusiness.avif" alt="" />
+        <div class="card-hader"></div>
+        <div class="card-body">
+          <h2>Surface for Business</h2>
+          <p>No matter what you do, there’s a Surface to help you do it.</p>
+        </div>
+        <div class="card-footer">
+          <button>Shop Now</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="gldn-CP-Microsoft-Teams-Commercial.webp" alt="" />
+        <div class="card-hader"></div>
+        <div class="card-body">
+          <h2>Get Microsoft Teams for free</h2>
+          <p>
+            Online meetings, chat and shared cloud storage – all in one place.
+          </p>
+        </div>
+        <div class="card-footer">
+          <button>Sign up for free</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="Content-Card-Microsoft-Teams-Commercial-Meeting.avif"
+          alt="" />
+        <div class="card-hader"></div>
+        <div class="card-body">
+          <h2>Get Microsoft Teams for your business</h2>
+          <p>
+            Online meetings, chat, real-time collaboration, and shared cloud
+            storage – all in one place.
+          </p>
+        </div>
+        <div class="card-footer">
+          <button>Fint the righ plan your business</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="Content-Card-Copilot-Commercial.avif" alt="" />
+        <div class="card-hader">
+          <span>New</span>
+        </div>
+        <div class="card-body">
+          <h2>Copilot for Microsoft 365</h2>
+          <p>
+            Save time and focus on the things that matter most with AI in
+            Microsoft 365 for business.
+          </p>
+        </div>
+        <div class="card-footer">
+          <button>learn more</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="layout-box">
+      <h1>Follow Microsoft</h1>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-x-twitter"></i>
+      <i class="fa-brands fa-youtube"></i>
+    </div>
+
+    <div class="back">
+      <button><i class="fa-solid fa-arrow-up"></i> Back To top</button>
+    </div>
+
+    <footer>
+      <div class="boxone">
+        <ol>
+          <li><strong>What is New</strong></li>
+          <li><a href="#">Surface Pro</a></li>
+          <li><a href="#">Surface Laptop</a></li>
+          <li><a href="#">Microsoft Copilot</a></li>
+          <li><a href="#">Microsoft 365</a></li>
+          <li><a href="#">Windows 11 apps</a></li>
+        </ol>
+        <div class="boxtwo">
+          <li><strong>Microsoft Store</strong></li>
+          <li><a href="#">Account profile</a></li>
+          <li><a href="#">Download Centrer</a></li>
+          <li><a href="#">Microsoft Store Support</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Order tracking</a></li>
+        </div>
+        <div class="boxthree">
+          <li><strong>Education </strong></li>
+          <li><a href="#">Microsoft in education</a></li>
+          <li><a href="#">Devices for edcation</a></li>
+          <li><a href="#">Microsoft 365 Education </a></li>
+          <li><a href="#">Office Education</a></li>
+          <li><a href="#">Educatior traning and developement</a></li>
+          <li><a href="#">Azure for students</a></li>
+          <li><a href="#">Deals for students and parents</a></li>
+        </div>
+        <div class="boxfour">
+          <li><strong>Business</strong></li>
+          <li><a href="#">Microsoft Cloud</a></li>
+          <li><a href="#">Microsoft Security </a></li>
+          <li><a href="#">Azure</a></li>
+          <li><a href="#">Dynmics 365</a></li>
+          <li><a href="#">Microsoft 3651</a></li>
+          <li><a href="#">Microsoft Adverting</a></li>
+        </div>
+        <div class="boxfive">
+          <li><strong>Developer % IT</strong></li>
+          <li><a href="#">Developer Center</a></li>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Microsoft Learn</a></li>
+          <li><a href="#">Microsoft Tech Community</a></li>
+          <li><a href="#">Azure Markeplace</a></li>
+          <li><a href="#">AppSource</a></li>
+          <li><a href="#">Visual Studio</a></li>
+        </div>
+        <div class="boxsix">
+          <li><strong>Company</strong></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About microsoft</a></li>
+          <li><a href="#">Campany news</a></li>
+          <li><a href="#">Investors</a></li>
+          <li><a href="#">Security</a></li>
+          <li><a href="#">Windows 11</a></li>
+        </div>
+      </div>
+    </footer>
+
+    <div class="footer">&copy; Microsoft-365</div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+    <script src="Script.js"></script>
+  </body>
+</html>
